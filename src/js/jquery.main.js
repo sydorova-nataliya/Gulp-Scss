@@ -12,19 +12,6 @@ $( document ).ready(function() {
         $('.navigation').toggleClass('active');
     })
 
-    $(function() {
-        $('.tabs__btn').click(function(e){
-            e.preventDefault();
-            const tab_id = $(this).attr('href');
-
-            $('.tabs__btn').removeClass('active');
-            $('.tabs__content').removeClass('active');
-
-            $(this).addClass('active');
-            $(tab_id).addClass('active');
-        })
-    });
-
     $('.slider').slick({
         dots: true,
         infinite: true,
